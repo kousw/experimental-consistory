@@ -1,0 +1,28 @@
+torch
+torchvision
+torchaudio
+diffusers==0.24.0
+transformers
+pillow
+einops
+tqdm
+datasets
+argparse
+omegaconf
+matplotlib
+transparent-background
+opencv-python
+timm
+rembg
+python-dotenv
+wandb
+accelerate
+bitsandbytes
+fonts
+roboto
+font_roboto
+
+
+# extra index url for xformers with cu118
+--extra-index-url https://download.pytorch.org/whl/cu121
+xformers

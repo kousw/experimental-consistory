@@ -1,0 +1,18 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+.env
+# Virtual Environment
+/venv/
+/models/
+/output/
+/datasets/large/
+/datasets/small/
+/datasets/medium/
+/datasets/validation/
+/datasets/dreambooth/
+/wandb/
+/local/
