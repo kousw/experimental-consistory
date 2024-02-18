@@ -553,8 +553,8 @@ if __name__ == '__main__':
     parser.add_argument("--reference_image", type=str, default=None, help="Reference image path")
     parser.add_argument("--mask_image", type=str, default=None, help="Mask image path")
     parser.add_argument("--num_samples", type=int, default=1, help="Number of samples")
-    parser.add_argument("--num_inference_steps", type=int, default=50, help="Number of inference steps")
-    parser.add_argument("--guidance_scale", type=float, default=7.5, help="Guidance scale")
+    parser.add_argument("--num_inference_steps", type=int, default=10, help="Number of inference steps")
+    parser.add_argument("--guidance_scale", type=float, default=1.0, help="Guidance scale")
     parser.add_argument("--resolution", type=int, default=512, help="Resolution")
     parser.add_argument("--enable_xformers_memory_efficient_attention", action="store_true", help="Enable xformers memory efficient attention")
     parser.add_argument("--output_dir", type=str, default="output", help="Output directory")
@@ -586,6 +586,9 @@ if __name__ == '__main__':
             "1girl, best quality, ultra detailed, resting on the wood",  
             "1girl, best quality, ultra detailed, shoot guns and run the battlefield",  
         ]
+        
+    print(args.keywords)
+    print(args.prompt)
     
     args.batch_size = len(args.prompt)       
     
